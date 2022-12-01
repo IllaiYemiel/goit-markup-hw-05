@@ -36,6 +36,7 @@
           </ul>
         </nav>
 
+        <div class="auth-nav-flex">
         <ul class="auth-nav list">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com"
@@ -49,6 +50,7 @@
           </li>
         </ul>
       </div>
+      </div>
     </header>
 
     <!--Унікальний контент сторінки Студія-->
@@ -57,7 +59,7 @@
       <section class="hero section overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open >Замовити послугу</button>
         </div>
       </section>
 
@@ -121,12 +123,15 @@
           <ul class="direction-list list">
             <li class="direction-text">
               <img src="./images/img.jpg" alt="Десктопні додатки" width="370" height="294" />
+              <p class="direction-name">Десктопні додатки</p>
             </li>
             <li class="direction-text">
               <img src="./images/img-1.jpg" alt="Мобільні додатки" width="370" height="294" />
+              <p class="direction-name">Мобільні додатки</p>
             </li>
             <li class="direction-text">
               <img src="./images/img-2.jpg" alt="Дизайнерські рішення" width="370" height="294" />
+              <p class="direction-name">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -433,5 +438,11 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>&times;</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
