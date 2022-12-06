@@ -630,7 +630,7 @@ ul.auth-nav.list {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works-thumb:hover .works-thumb-overlay{
+.works-item:hover .works-thumb-overlay{
     transform: translate(0);
 }
 
